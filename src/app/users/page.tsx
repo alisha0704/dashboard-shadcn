@@ -45,104 +45,104 @@ const columns: ColumnDef<Payment>[] = [
   },
   {
     accessorKey: "lastOrder",
-    header: "Last Order"
+    header: "Genre Preference"
   },
   {
     accessorKey: "method",
-    header: "Method"
+    header: "Genre"
   }
 ];
 
 const data: Payment[] = [
   {
     name: "John Doe",
-    email: "john@example.com",
-    lastOrder: "2023-01-01",
-    method: "Credit Card"
+    email: "john@gmail.com",
+    lastOrder: "75%",
+    method: "Action"
   },
   {
     name: "Alice Smith",
-    email: "alice@example.com",
-    lastOrder: "2023-02-15",
-    method: "PayPal"
+    email: "alice@gmail.com",
+    lastOrder: "80%",
+    method: "Horror"
   },
   {
     name: "Bob Johnson",
-    email: "bob@example.com",
-    lastOrder: "2023-03-20",
-    method: "Stripe"
+    email: "bob@egmail.com",
+    lastOrder: "85%",
+    method: "Horror"
   },
   {
     name: "Emma Brown",
-    email: "emma@example.com",
-    lastOrder: "2023-04-10",
-    method: "Venmo"
+    email: "emma@gmail.com",
+    lastOrder: "70%",
+    method: "Romance"
   },
   {
     name: "Michael Davis",
-    email: "michael@example.com",
-    lastOrder: "2023-05-05",
-    method: "Cash"
+    email: "michael@gmail.com",
+    lastOrder: "68%",
+    method: "Adventure"
   },
   {
     name: "Sophia Wilson",
-    email: "sophia@example.com",
-    lastOrder: "2023-06-18",
-    method: "Bank Transfer"
+    email: "sophia@gmail.com",
+    lastOrder: "73%",
+    method: "Action"
   },
   {
     name: "Liam Garcia",
-    email: "liam@example.com",
-    lastOrder: "2023-07-22",
-    method: "Payoneer"
+    email: "liam@gmail.com",
+    lastOrder: "82%",
+    method: "Romance"
   },
   {
     name: "Olivia Martinez",
-    email: "olivia@example.com",
-    lastOrder: "2023-08-30",
-    method: "Apple Pay"
+    email: "olivia@gmail.com",
+    lastOrder: "69%",
+    method: "Drama"
   },
   {
     name: "Noah Rodriguez",
-    email: "noah@example.com",
-    lastOrder: "2023-09-12",
-    method: "Google Pay"
+    email: "noah@gmail.com",
+    lastOrder: "67%",
+    method: "Romance"
   },
   {
     name: "Ava Lopez",
-    email: "ava@example.com",
-    lastOrder: "2023-10-25",
-    method: "Cryptocurrency"
+    email: "ava@gmail.com",
+    lastOrder: "82%",
+    method: "Thriller"
   },
   {
     name: "Elijah Hernandez",
-    email: "elijah@example.com",
-    lastOrder: "2023-11-05",
-    method: "Alipay"
+    email: "elijah@gmail.com",
+    lastOrder: "93%",
+    method: "Comedy"
   },
   {
     name: "Mia Gonzalez",
-    email: "mia@example.com",
-    lastOrder: "2023-12-08",
-    method: "WeChat Pay"
+    email: "mia@gmail.com",
+    lastOrder: "78%",
+    method: "Romance"
   },
   {
     name: "James Perez",
-    email: "james@example.com",
-    lastOrder: "2024-01-18",
-    method: "Square Cash"
+    email: "james@gmail.com",
+    lastOrder: "85%",
+    method: "Thriller"
   },
   {
     name: "Charlotte Carter",
-    email: "charlotte@example.com",
-    lastOrder: "2024-02-22",
-    method: "Zelle"
+    email: "charlotte@gmail.com",
+    lastOrder: "90%",
+    method: "Horror"
   },
   {
     name: "Benjamin Taylor",
-    email: "benjamin@example.com",
-    lastOrder: "2024-03-30",
-    method: "Stripe"
+    email: "benjamin@gmail.com",
+    lastOrder: "75%",
+    method: "Action"
   }
 ];
 
