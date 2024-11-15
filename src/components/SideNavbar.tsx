@@ -88,7 +88,8 @@ import {
   UsersRound,
   Settings,
   ChevronRight,
-  DownloadCloud
+  DownloadCloud,
+  MessageCircle
 } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -147,6 +148,12 @@ export default function SideNavbar({}: Props) {
             title: "Metrics",
             href: "/orders",
             icon: ShoppingCart,
+            variant: "ghost"
+          },
+          {
+            title: "Roll Feedback",
+            href: "/feedback",
+            icon: MessageCircle,
             variant: "ghost"
           },
           {

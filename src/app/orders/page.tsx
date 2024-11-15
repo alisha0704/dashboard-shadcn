@@ -293,7 +293,7 @@ const columns: ColumnDef<Payment>[] = [
     header: "Action",
     cell: ({ row }) => (
       <div className="flex gap-2">
-        <button className="px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-green-600">
+        <button className="px-4 py-2 bg-black text-white rounded-lg hover:bg-slate-800">
           {row.getValue("action")}
         </button>
       </div>
