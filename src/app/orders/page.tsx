@@ -270,7 +270,7 @@ const columns: ColumnDef<Payment>[] = [
   },
   {
     accessorKey: "engagement",
-    header: "Engagement Rate"
+    header: "Engagement Rate(%)"
   },
   {
     accessorKey: "status",
@@ -279,9 +279,8 @@ const columns: ColumnDef<Payment>[] = [
       return (
         <div
           className={cn("font-medium w-fit px-4 py-2 rounded-lg", {
-            "bg-red-300": row.getValue("status") === "Archived",
-            "bg-yellow-200": row.getValue("status") === "Active",
-            "bg-green-200": row.getValue("status") === "Completed"
+            "bg-red-400": row.getValue("status") === "Paused",
+            "bg-green-300": row.getValue("status") === "Active",
           })}
         >
           {row.getValue("status")}
@@ -309,7 +308,7 @@ const data: Payment[] = [
     enddate: "2023-10-31",
     targetemotion: "Joy",
     engagement: "78.5",
-    status: "Completed",
+    status: "Active",
     action: "Post",
   },
   {
@@ -327,7 +326,7 @@ const data: Payment[] = [
     enddate: "2023-10-10",
     targetemotion: "Excitement",
     engagement: "80.2",
-    status: "Completed",
+    status: "Paused",
     action: "Post",
   },
   {
@@ -345,7 +344,7 @@ const data: Payment[] = [
     enddate: "2023-09-05",
     targetemotion: "Sadness",
     engagement: "50.3",
-    status: "Archived",
+    status: "Paused",
     action: "Post",
   },
   {
@@ -354,7 +353,7 @@ const data: Payment[] = [
         enddate: "2023-07-15",
         targetemotion: "Thrill",
         engagement: "85.1",
-        status: "Completed",
+        status: "Paused",
         action: "Post",
       },
       {
@@ -363,7 +362,7 @@ const data: Payment[] = [
         enddate: "2023-06-30",
         targetemotion: "Peace",
         engagement: "68.2",
-        status: "Completed",
+        status: "Active",
         action: "Post",
       },
       {
@@ -381,7 +380,7 @@ const data: Payment[] = [
         enddate: "2023-03-25",
         targetemotion: "Motivation",
         engagement: "77.4",
-        status: "Completed",
+        status: "Active",
         action: "Post",
       },
       {
@@ -390,7 +389,7 @@ const data: Payment[] = [
         enddate: "2023-02-14",
         targetemotion: "Excitement",
         engagement: "82.9",
-        status: "Completed",
+        status: "Paused",
         action: "Post",
       },
       {
@@ -399,7 +398,7 @@ const data: Payment[] = [
         enddate: "2023-01-20",
         targetemotion: "Love",
         engagement: "63.2",
-        status: "Archived",
+        status: "Paused",
         action: "Post",
       },
       {
@@ -408,7 +407,7 @@ const data: Payment[] = [
         enddate: "2022-12-31",
         targetemotion: "Joy",
         engagement: "70.5",
-        status: "Completed",
+        status: "Active",
         action: "Post",
       },
       {
@@ -417,7 +416,7 @@ const data: Payment[] = [
         enddate: "2022-11-30",
         targetemotion: "Calm",
         engagement: "60.8",
-        status: "Completed",
+        status: "Paused",
         action: "Post",
       },
       {
@@ -435,7 +434,7 @@ const data: Payment[] = [
         enddate: "2022-09-20",
         targetemotion: "Happiness",
         engagement: "73.9",
-        status: "Completed",
+        status: "Active",
         action: "Post",
       },
       {
