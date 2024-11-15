@@ -9,27 +9,27 @@ import SalesCard, { SalesProps } from "@/components/SalesCard";
 
 const cardData: CardProps[] = [
   {
-    label: "Total Revenue",
-    amount: "$45,231.89",
+    label: "Total Users",
+    amount: "781",
     discription: "+20.1% from last month",
-    icon: DollarSign
+    icon: Users
   },
   {
-    label: "Subscriptions",
+    label: "Total Impressions",
     amount: "+2350",
     discription: "+180.1% from last month",
     icon: Users
   },
   {
-    label: "Sales",
-    amount: "+12,234",
-    discription: "+19% from last month",
+    label: "Total Genres",
+    amount: "+12",
+    discription: "+18% from last month",
     icon: CreditCard
   },
   {
     label: "Active Now",
-    amount: "+573",
-    discription: "+201 since last hour",
+    amount: "+173",
+    discription: "+67 since last hour",
     icon: Activity
   }
 ];
@@ -37,28 +37,28 @@ const cardData: CardProps[] = [
 const uesrSalesData: SalesProps[] = [
   {
     name: "Olivia Martin",
-    email: "olivia.martin@email.com",
-    saleAmount: "+$1,999.00"
+    email: "olivia.martin@gmail.com",
+    saleAmount: "Comedy"
   },
   {
     name: "Jackson Lee",
-    email: "isabella.nguyen@email.com",
-    saleAmount: "+$1,999.00"
+    email: "isabella.nguyen@gmail.com",
+    saleAmount: "Romance"
   },
   {
     name: "Isabella Nguyen",
-    email: "isabella.nguyen@email.com",
-    saleAmount: "+$39.00"
+    email: "isabella.nguyen@gmail.com",
+    saleAmount: "Drama"
   },
   {
     name: "William Kim",
-    email: "will@email.com",
-    saleAmount: "+$299.00"
+    email: "will@gmail.com",
+    saleAmount: "Action"
   },
   {
     name: "Sofia Davis",
-    email: "sofia.davis@email.com",
-    saleAmount: "+$39.00"
+    email: "sofia.davis@gmail.com",
+    saleAmount: "Comedy"
   }
 ];
 
@@ -85,9 +85,9 @@ export default function Home() {
         </CardContent>
         <CardContent className="flex justify-between gap-4">
           <section>
-            <p>Recent Sales</p>
+            <p>Recent Users</p>
             <p className="text-sm text-gray-400">
-              You made 265 sales this month.
+              You onboarded 150 new users this month.
             </p>
           </section>
           {uesrSalesData.map((d, i) => (

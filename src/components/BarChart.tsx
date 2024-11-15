@@ -13,51 +13,51 @@ type Props = {};
 
 const data = [
   {
-    name: "Jan",
+    name: "Action",
     total: Math.floor(Math.random() * 5000) + 1000
   },
   {
-    name: "Feb",
-    total: Math.floor(Math.random() * 5000) + 1000
+    name: "Rom",
+    total: Math.floor(Math.random() * 6000) + 1000
   },
   {
-    name: "Mar",
-    total: Math.floor(Math.random() * 5000) + 1000
+    name: "Comedy",
+    total: Math.floor(Math.random() * 1000) + 1000
   },
   {
-    name: "Apr",
-    total: Math.floor(Math.random() * 5000) + 1000
+    name: "Drama",
+    total: Math.floor(Math.random() * 1000) + 1000
   },
   {
-    name: "May",
-    total: Math.floor(Math.random() * 5000) + 1000
+    name: "Sci-Fi",
+    total: Math.floor(Math.random() * 1000) + 1000
   },
   {
-    name: "Jun",
-    total: Math.floor(Math.random() * 5000) + 1000
+    name: "Horror",
+    total: Math.floor(Math.random() * 1000) + 1000
   },
   {
-    name: "Jul",
-    total: Math.floor(Math.random() * 5000) + 1000
+    name: "Thriller",
+    total: Math.floor(Math.random() * 1000) + 1000
   },
   {
-    name: "Aug",
-    total: Math.floor(Math.random() * 5000) + 1000
+    name: "Mystery",
+    total: Math.floor(Math.random() * 1000) + 1000
   },
   {
-    name: "Sep",
-    total: Math.floor(Math.random() * 5000) + 1000
+    name: "Fantasy",
+    total: Math.floor(Math.random() * 2000) + 1000
   },
   {
-    name: "Oct",
-    total: Math.floor(Math.random() * 5000) + 1000
+    name: "Other",
+    total: Math.floor(Math.random() * 1000) + 1000
   },
   {
-    name: "Nov",
-    total: Math.floor(Math.random() * 5000) + 1000
+    name: "West",
+    total: Math.floor(Math.random() * 3000) + 1000
   },
   {
-    name: "Dec",
+    name: "Animation",
     total: Math.floor(Math.random() * 5000) + 1000
   }
 ];
@@ -78,7 +78,7 @@ export default function BarChart({}: Props) {
           axisLine={false}
           stroke="#888888"
           fontSize={12}
-          tickFormatter={(value) => `$${value}`}
+          tickFormatter={(value) => `${value}`}
         />
         <Bar dataKey={"total"} radius={[4, 4, 0, 0]} />
       </BarGraph>

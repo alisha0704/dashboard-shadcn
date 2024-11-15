@@ -51,7 +51,7 @@ const data: Setting[] = [
   },
   {
     category: "Theme",
-    value: "Dark"
+    value: "Light"
   }
 ];
 
