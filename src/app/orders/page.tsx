@@ -485,7 +485,7 @@ type Payment = {
 
 // Function to send an email to multiple recipients
 const sendOrderFeedback = async (row: { campaign: any; startdate: any; enddate: any; targetemotion: any; engagement: any; status?: string; action?: string; }) => {
-  const recipients = ["prakhargupta0607@gmail.com", "rkashish0406@gmail.com"]; // Add the two recipients here
+  const recipients = ["prakhargupta0607@gmail.com", "rkashish0406@gmail.com", "alishabandyopadhyay07@gmail.com"]; // Add the two recipients here
   const campaignDetails = `Campaign: ${row.campaign}\nStart Date: ${row.startdate}\nEnd Date: ${row.enddate}\nEngagement: ${row.engagement}%`;
   try {
     const response = await fetch("/api/sendOrderFeedback", {
@@ -555,14 +555,7 @@ const columns: ColumnDef<Payment>[] = [
     header: "Action",
     cell: ({ row }) => (
       <div className="flex gap-2">
-<<<<<<< HEAD
-        <button
-          onClick={() => sendOrderFeedback(row.original)} // Send email with row data
-          className="px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-green-600"
-        >
-=======
         <button className="px-4 py-2 bg-black text-white rounded-lg hover:bg-slate-800">
->>>>>>> 7d51832969475abfeed1f3ee0dd5448cd4c4f180
           {row.getValue("action")}
         </button>
       </div>

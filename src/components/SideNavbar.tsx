@@ -1,8 +1,4 @@
 
-
-
-
-
 /** @format */
 "use client";
 
@@ -16,11 +12,8 @@ import {
   Settings,
   ChevronRight,
   DownloadCloud,
-<<<<<<< HEAD
-  Mail,
-=======
-  MessageCircle
->>>>>>> 7d51832969475abfeed1f3ee0dd5448cd4c4f180
+  MessageCircle,
+  Mail
 } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -59,6 +52,11 @@ export default function SideNavbar() {
         recipient: "rkashish0406@gmail.com",
         genre: "Comedy",
         movies: ["Movie X", "Movie Y", "Movie Z"],
+      },
+      {
+        recipient: "alishabandyopadhyay07@gmail.com",
+        genre: "Romance",
+        movies: ["Movie G", "Movie H", "Movie I"],
       },
     ];
 
@@ -103,12 +101,6 @@ export default function SideNavbar() {
       <Nav
         isCollapsed={mobileWidth ? true : isCollapsed}
         links={[
-<<<<<<< HEAD
-          { title: "Dashboard", href: "/", icon: LayoutDashboard, variant: "default" },
-          { title: "Users", href: "/users", icon: UsersRound, variant: "ghost" },
-          { title: "Metrics", href: "/orders", icon: ShoppingCart, variant: "ghost" },
-          { title: "Settings", href: "/settings", icon: Settings, variant: "ghost" },
-=======
           {
             title: "Dashboard",
             href: "/",
@@ -128,28 +120,21 @@ export default function SideNavbar() {
             variant: "ghost"
           },
           {
-            title: "Roll Feedback",
-            href: "/feedback",
-            icon: MessageCircle,
-            variant: "ghost"
-          },
-          {
             title: "Settings",
             href: "/settings",
             icon: Settings,
             variant: "ghost"
           }
->>>>>>> 7d51832969475abfeed1f3ee0dd5448cd4c4f180
         ]}
       />
       {/* Button to send emails */}
-      <div className={`mt-8 ${isCollapsed ? "hidden" : ""}`}>
+      <div className={`mt-10 ${isCollapsed ? "hidden" : ""}`}>
         <Button
           onClick={handleSendEmails}
           variant="outline"
           className="w-full flex items-center justify-center space-x-2 overflow-visible"
         >
-          <Mail className="shrink-0" />
+          <MessageCircle className="shrink-0" />
           <span className="truncate">Roll Out<br></br> Feedback</span>
         </Button>
       </div>
@@ -157,7 +142,7 @@ export default function SideNavbar() {
       <div className="mt-auto">
         <Button onClick={downloadPdf} variant="default" className="w-full mt-4">
           <DownloadCloud className="mr-2" />
-          <span className="truncate">Download<br></br>PDF</span>
+          <span className="truncate my-2">Download<br></br>PDF</span>
         </Button>
       </div>
     </div>
