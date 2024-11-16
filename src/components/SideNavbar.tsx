@@ -16,7 +16,11 @@ import {
   Settings,
   ChevronRight,
   DownloadCloud,
+<<<<<<< HEAD
   Mail,
+=======
+  MessageCircle
+>>>>>>> 7d51832969475abfeed1f3ee0dd5448cd4c4f180
 } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -99,10 +103,43 @@ export default function SideNavbar() {
       <Nav
         isCollapsed={mobileWidth ? true : isCollapsed}
         links={[
+<<<<<<< HEAD
           { title: "Dashboard", href: "/", icon: LayoutDashboard, variant: "default" },
           { title: "Users", href: "/users", icon: UsersRound, variant: "ghost" },
           { title: "Metrics", href: "/orders", icon: ShoppingCart, variant: "ghost" },
           { title: "Settings", href: "/settings", icon: Settings, variant: "ghost" },
+=======
+          {
+            title: "Dashboard",
+            href: "/",
+            icon: LayoutDashboard,
+            variant: "default"
+          },
+          {
+            title: "Users",
+            href: "/users",
+            icon: UsersRound,
+            variant: "ghost"
+          },
+          {
+            title: "Metrics",
+            href: "/orders",
+            icon: ShoppingCart,
+            variant: "ghost"
+          },
+          {
+            title: "Roll Feedback",
+            href: "/feedback",
+            icon: MessageCircle,
+            variant: "ghost"
+          },
+          {
+            title: "Settings",
+            href: "/settings",
+            icon: Settings,
+            variant: "ghost"
+          }
+>>>>>>> 7d51832969475abfeed1f3ee0dd5448cd4c4f180
         ]}
       />
       {/* Button to send emails */}
