@@ -41,7 +41,7 @@ export default function SideNavbar() {
   // }
 
   function downloadCsv() {
-    const csvUrl = "/project data.csv"; // Replace with the correct path to your CSV file
+    const csvUrl = "/analysis_data.csv"; // Replace with the correct path to your CSV file
     const link = document.createElement("a");
     link.href = csvUrl;
     link.download = "analysis_data.csv"; // Downloaded file name
