@@ -30,15 +30,25 @@ export default function SideNavbar() {
   }
 
   // Download PDF function
-  function downloadPdf() {
-    const pdfUrl = "/alisha exc.docx_compressed.pdf";
+  // function downloadPdf() {
+  //   const pdfUrl = "/alisha exc.docx_compressed.pdf";
+  //   const link = document.createElement("a");
+  //   link.href = pdfUrl;
+  //   link.download = "analysis_data.pdf"; // Downloaded file name
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // }
+
+  function downloadCsv() {
+    const csvUrl = "/project data.csv"; // Replace with the correct path to your CSV file
     const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "analysis_data.pdf"; // Downloaded file name
+    link.href = csvUrl;
+    link.download = "analysis_data.csv"; // Downloaded file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  }
+}
 
   // Send emails function
   async function handleSendEmails() {
@@ -140,7 +150,7 @@ export default function SideNavbar() {
       </div>
       {/* Button to download PDF */}
       <div className="mt-auto">
-        <Button onClick={downloadPdf} variant="default" className="w-full mt-4">
+        <Button onClick={downloadCsv} variant="default" className="w-full mt-4">
           <DownloadCloud className="mr-2" />
           <span className="truncate my-2">Download<br></br>PDF</span>
         </Button>
